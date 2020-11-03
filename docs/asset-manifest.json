@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/svampapp/static/css/main.ab7136cd.chunk.css",
-    "main.js": "/svampapp/static/js/main.72044582.chunk.js",
-    "main.js.map": "/svampapp/static/js/main.72044582.chunk.js.map",
-    "runtime-main.js": "/svampapp/static/js/runtime-main.00dd031d.js",
-    "runtime-main.js.map": "/svampapp/static/js/runtime-main.00dd031d.js.map",
-    "static/js/2.ed5eeb06.chunk.js": "/svampapp/static/js/2.ed5eeb06.chunk.js",
-    "static/js/2.ed5eeb06.chunk.js.map": "/svampapp/static/js/2.ed5eeb06.chunk.js.map",
-    "static/js/3.98bf1d3c.chunk.js": "/svampapp/static/js/3.98bf1d3c.chunk.js",
-    "static/js/3.98bf1d3c.chunk.js.map": "/svampapp/static/js/3.98bf1d3c.chunk.js.map",
+    "main.css": "/svampapp/static/css/main.d7bf77aa.chunk.css",
+    "main.js": "/svampapp/static/js/main.5c1d9a0b.chunk.js",
+    "main.js.map": "/svampapp/static/js/main.5c1d9a0b.chunk.js.map",
+    "runtime-main.js": "/svampapp/static/js/runtime-main.2a8ea586.js",
+    "runtime-main.js.map": "/svampapp/static/js/runtime-main.2a8ea586.js.map",
+    "static/js/2.e54e5e9b.chunk.js": "/svampapp/static/js/2.e54e5e9b.chunk.js",
+    "static/js/2.e54e5e9b.chunk.js.map": "/svampapp/static/js/2.e54e5e9b.chunk.js.map",
+    "static/js/3.bbbf61cb.chunk.js": "/svampapp/static/js/3.bbbf61cb.chunk.js",
+    "static/js/3.bbbf61cb.chunk.js.map": "/svampapp/static/js/3.bbbf61cb.chunk.js.map",
     "index.html": "/svampapp/index.html",
-    "static/css/main.ab7136cd.chunk.css.map": "/svampapp/static/css/main.ab7136cd.chunk.css.map",
-    "static/js/2.ed5eeb06.chunk.js.LICENSE.txt": "/svampapp/static/js/2.ed5eeb06.chunk.js.LICENSE.txt",
-    "static/media/logo.103b5fa1.svg": "/svampapp/static/media/logo.103b5fa1.svg"
+    "static/css/main.d7bf77aa.chunk.css.map": "/svampapp/static/css/main.d7bf77aa.chunk.css.map",
+    "static/js/2.e54e5e9b.chunk.js.LICENSE.txt": "/svampapp/static/js/2.e54e5e9b.chunk.js.LICENSE.txt",
+    "static/media/color.b7007fbe.svg": "/svampapp/static/media/color.b7007fbe.svg",
+    "static/media/minisvamp.2d9ab2e9.svg": "/svampapp/static/media/minisvamp.2d9ab2e9.svg",
+    "static/media/star.742b6a13.svg": "/svampapp/static/media/star.742b6a13.svg",
+    "static/media/svamp.bd58f38b.svg": "/svampapp/static/media/svamp.bd58f38b.svg",
+    "static/media/varning.ea9195a4.svg": "/svampapp/static/media/varning.ea9195a4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.00dd031d.js",
-    "static/js/2.ed5eeb06.chunk.js",
-    "static/css/main.ab7136cd.chunk.css",
-    "static/js/main.72044582.chunk.js"
+    "static/js/runtime-main.2a8ea586.js",
+    "static/js/2.e54e5e9b.chunk.js",
+    "static/css/main.d7bf77aa.chunk.css",
+    "static/js/main.5c1d9a0b.chunk.js"
   ]
 }
