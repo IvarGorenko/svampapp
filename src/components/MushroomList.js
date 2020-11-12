@@ -16,14 +16,11 @@ function MushroomList () { // när man vill trigga om rendering useState
   return (
     // Autofocus funkar inte alltid
     <div>
-      <div>
+      <div className='searchBar1'>
         <Link to='/'>
           <img className='backButton' src={backButton} alt='backButton' />
         </Link>
-      </div>
-      {/* callback function: setsearchstring to change state */}
-      <div className='searchDiv'>
-        <input autoFocus='autofocus' className='searchBar' type='text' placeholder='Sök efter svamp' name='title' onChange={event => setSearchString(event.target.value)} />
+        <input autoFocus='autofocus' className='searchBarTop' type='text' placeholder='Sök efter svamp' name='title' onChange={event => setSearchString(event.target.value)} />
       </div>
       <div>
         {mushroom.filter(match).map((mushroom, i) => (<MushroomInfo key={mushroom.id} data={mushroom} />))}

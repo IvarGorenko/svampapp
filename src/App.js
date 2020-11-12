@@ -7,6 +7,7 @@ import star from './bilder/star.svg'
 import palette from './bilder/color.svg'
 import mushroomIcon from './bilder/minisvamp.svg'
 import varningIcon from './bilder/varning.svg'
+import searchIcon from './bilder/search.svg'
 
 import MushroomList from './components/MushroomList'
 // import MushroomInfo from './components/MushroomInfo'
@@ -40,13 +41,15 @@ function App () {
               <img className='varningImage' src={varningIcon} alt='Varning' />
               <p className='varningText'>Svampar kan vara dödliga. Ät dem på egen risk.</p>
             </div>
-            <Link to='/search'>
-              <input className='searchBar' type='text' placeholder='Sök efter svamp' name='title' />
-            </Link>
-            <div className='buttongroup'>
-              <button className='button'><p className='alignleft'>Mest vanliga svampar</p><img className='alignright icon' src={star} alt='star' /></button>
-              <button className='button'><p className='alignleft'>Sök efter färg</p><img className='alignright icon' src={palette} alt='color' /></button>
-              <button className='button'><p className='alignleft'>Sök efter form</p><img className='alignright icon' src={mushroomIcon} alt='icon' /></button>
+            <div className='superButtongroup'>
+              <Link to='/search'>
+                <button className='searchBar'><p className='alignleft'>Sök efter svampar...</p><img className='alignright icon' src={searchIcon} alt='search' /></button>
+              </Link>
+              <div className='buttongroup'>
+                <button className='button'><p className='alignleft'>Mest vanliga svampar</p><img className='alignright icon' src={star} alt='star' /></button>
+                <button className='button'><p className='alignleft'>Sök efter färg</p><img className='alignright icon' src={palette} alt='color' /></button>
+                <button className='button'><p className='alignleft'>Sök efter form</p><img className='alignright icon' src={mushroomIcon} alt='icon' /></button>
+              </div>
             </div>
           </Route>
         </Switch>

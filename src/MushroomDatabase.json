@@ -441,8 +441,7 @@
       "scientificName": "Cantharellus cibarius",
       "swedishName": "Kantarell",
       "color": [
-         "yellow",
-         ""
+         "yellow"
       ],
       "vegetation": "Öppningar i barr och lövskog",
       "nonScGroup": 1700,
@@ -1305,8 +1304,7 @@
       "swedishName": "Mandelriska",
       "color": [
          "red",
-         "brown",
-         ""
+         "brown"
       ],
       "vegetation": "Löv- och barrskog",
       "nonScGroup": 200,
@@ -4436,7 +4434,7 @@
       "edibility": 700,
       "edibilityValue": "† Giftig",
       "privateNote": "",
-      "description": "Röd flugsvamp är en av de till utseendet mest kända svamparna, och är en mycket vacker svamp som illustrerat många naturbilder. Svampen innhåller nervgifter, som ursakar mm. hallusinationer.\n<br /><br />\n<b>Hatten</b> är 8-18 cm bred, som ung klotrund, senare välvd till utbredd. Hatthuden är klarröd, bleknar med tiden och kan bli även blekgul. Den har rikligt vita vårtlika hyllerester på hattytan. Ibland kan den vara helt kal, när hyllerester har glidit ner från hattytan. <b>Skivorna</b> är vita och glesa. <b>Foten</b> är vitt, flockig och har en stor, hängande ring, i kanten med gulvita fjäll. Foten har löklikt utvidgad basalknöl med fjällkransar.",
+      "description": "Röd flugsvamp är en av de till utseendet mest kända svamparna, och är en mycket vacker svamp som illustrerat många naturbilder. Svampen innhåller nervgifter, som orsakar mm. hallusinationer.\n<br /><br />\n<b>Hatten</b> är 8-18 cm bred, som ung klotrund, senare välvd till utbredd. Hatthuden är klarröd, bleknar med tiden och kan bli även blekgul. Den har rikligt vita vårtlika hyllerester på hattytan. Ibland kan den vara helt kal, när hyllerester har glidit ner från hattytan. <b>Skivorna</b> är vita och glesa. <b>Foten</b> är vitt, flockig och har en stor, hängande ring, i kanten med gulvita fjäll. Foten har löklikt utvidgad basalknöl med fjällkransar.",
       "pictures": [
          {
             "fileName": "Amanitamuscaria1.jpg",
