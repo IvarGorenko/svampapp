@@ -7,7 +7,7 @@ import backButton from '../bilder/backButton.svg'
 function MushroomList () { // när man vill trigga om rendering useState
   const [searchString, setSearchString] = useState('')
   const match = mushroom => {
-    const lowerCaseMushroom = mushroom.swedishName.toLowerCase()
+    const lowerCaseMushroom = mushroom.swedishName.toLowerCase() // behöver också söka på färg på nått sätt
     const lowerCaseSearchString = searchString.toLowerCase()
 
     return lowerCaseMushroom.indexOf(lowerCaseSearchString) === 0 // svårt att söka då man måste skriva exakta namnet i rätt ordning pga indexof

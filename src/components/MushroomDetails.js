@@ -2,15 +2,22 @@ import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import mushroom from '../MushroomDatabase.json'
 import backButton from '../bilder/backButton.svg'
-import logo from '../bilder/svamp.svg'
 
 function getMushroomByName (mushroomName) {
   const found = mushroom.find(element => element.swedishName === mushroomName)
+
   // console.log(found)
   return (
     found
   )
 }
+
+function importAll (r) {
+  const images = {}
+  r.keys().forEach((item) => { images[item.replace('./', '')] = r(item) })
+  return images
+}
+
 function MushroomDetails () {
   const mushroomdata = getMushroomByName(useParams().swedishName)
 
@@ -28,7 +35,12 @@ function MushroomDetails () {
     colorArray = colorArray[0] + ', ' + colorArray[1] + ', ' + colorArray[2] + ', ' + colorArray[3] + ', ' + colorArray[4]
   }
 
-  return (
+  const images = importAll(require.context('../bilder/svampbilder/', false, /\.(jpg)$/))
+  const filenameArray = mushroomdata.pictures[0].fileName.split('.')
+  const filename = filenameArray[0] + '.jpg'
+  const image = images[filename].default
+
+  return (/* behöver fixa så att det länkar tillbaka till color eller sort beroende på vart vi är innan */
     <div>
       <div className='searchBar1'>
         <Link to='/search'>
@@ -42,7 +54,7 @@ function MushroomDetails () {
         <div className='Info'>
           <div className='leftSida3'>
             <div className='mushroomPicture'>
-              <img className='picture' src={logo} alt='logo' />
+              <img className='picture' src={image} alt='logo' />
             </div>
           </div>
           <div className='rightSida3'>

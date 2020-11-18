@@ -12,6 +12,9 @@ import searchIcon from './bilder/search.svg'
 import MushroomList from './components/MushroomList'
 // import MushroomInfo from './components/MushroomInfo'
 import MushroomDetails from './components/MushroomDetails'
+import MushroomListPopular from './components/MushroomListPopular'
+import MushroomColor from './components/MushroomColor'
+import MushroomListColor from './components/MushroomListColor'
 import mushroom from './MushroomDatabase.json'
 import {
   Link,
@@ -32,7 +35,45 @@ function App () {
           <Route exact path='/search'>
             <MushroomList />
           </Route>
+          <Route exact path='/popular'>
+            <MushroomListPopular />
+          </Route>
+          <Route exact path='/color'>
+            <MushroomColor />
+          </Route>
+
+          <Route path='/color/white'>
+            <MushroomListColor />
+          </Route>
+          <Route path='/color/gray'>
+            <MushroomListColor />
+          </Route>
+          <Route path='/color/yellow'>
+            <MushroomListColor />
+          </Route>
+          <Route path='/color/brown'>
+            <MushroomListColor />
+          </Route>
+          <Route path='/color/orange'>
+            <MushroomListColor />
+          </Route>
+          <Route path='/color/green'>
+            <MushroomListColor />
+          </Route>
+          <Route path='/color/red'>
+            <MushroomListColor />
+          </Route>
+          <Route path='/color/black'>
+            <MushroomListColor />
+          </Route>
+          <Route path='/color/purple'>
+            <MushroomListColor />
+          </Route>
+          <Route exact path='/color'>
+            <MushroomColor />
+          </Route>
           <Route exact path='/'>
+
             <div>
               <img className='logo' src={logo} alt='Svampapp' />
             </div>
@@ -46,9 +87,15 @@ function App () {
                 <button className='searchBar'><p className='alignleft'>Sök efter svampar...</p><img className='alignright icon' src={searchIcon} alt='search' /></button>
               </Link>
               <div className='buttongroup'>
-                <button className='button'><p className='alignleft'>Mest vanliga svampar</p><img className='alignright icon' src={star} alt='star' /></button>
-                <button className='button'><p className='alignleft'>Sök efter färg</p><img className='alignright icon' src={palette} alt='color' /></button>
-                <button className='button'><p className='alignleft'>Sök efter form</p><img className='alignright icon' src={mushroomIcon} alt='icon' /></button>
+                <Link to='/popular'>
+                  <button className='button'><p className='alignleft'>Mest vanliga svampar</p><img className='alignright icon' src={star} alt='star' /></button>
+                </Link>
+                <Link to='/color'>
+                  <button className='button'><p className='alignleft'>Sök efter färg</p><img className='alignright icon' src={palette} alt='color' /></button>
+                </Link>
+                <Link to='/form'>
+                  <button className='button'><p className='alignleft'>Sök efter form</p><img className='alignright icon' src={mushroomIcon} alt='icon' /></button>
+                </Link>
               </div>
             </div>
           </Route>
