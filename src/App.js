@@ -1,6 +1,5 @@
 
 import './App.css'
-// import React, { useState } from 'react'
 
 import logo from './bilder/svamp.svg'
 import star from './bilder/star.svg'
@@ -10,12 +9,13 @@ import varningIcon from './bilder/varning.svg'
 import searchIcon from './bilder/search.svg'
 
 import MushroomList from './components/MushroomList'
-// import MushroomInfo from './components/MushroomInfo'
 import MushroomDetails from './components/MushroomDetails'
 import MushroomListPopular from './components/MushroomListPopular'
 import MushroomColor from './components/MushroomColor'
 import MushroomListColor from './components/MushroomListColor'
-import mushroom from './MushroomDatabase.json'
+import MushroomForm from './components/MushroomForm'
+import MushroomListForm from './components/MushroomListForm'
+
 import {
   Link,
   BrowserRouter as Router,
@@ -35,43 +35,25 @@ function App () {
           <Route exact path='/search'>
             <MushroomList />
           </Route>
+
           <Route exact path='/popular'>
             <MushroomListPopular />
           </Route>
+
           <Route exact path='/color'>
             <MushroomColor />
+          </Route>
+          <Route exact path='/color/:color'>
+            <MushroomListColor />
           </Route>
 
-          <Route path='/color/white'>
-            <MushroomListColor />
+          <Route exact path='/form'>
+            <MushroomForm />
           </Route>
-          <Route path='/color/gray'>
-            <MushroomListColor />
+          <Route exact path='/form/:form'>
+            <MushroomListForm />
           </Route>
-          <Route path='/color/yellow'>
-            <MushroomListColor />
-          </Route>
-          <Route path='/color/brown'>
-            <MushroomListColor />
-          </Route>
-          <Route path='/color/orange'>
-            <MushroomListColor />
-          </Route>
-          <Route path='/color/green'>
-            <MushroomListColor />
-          </Route>
-          <Route path='/color/red'>
-            <MushroomListColor />
-          </Route>
-          <Route path='/color/black'>
-            <MushroomListColor />
-          </Route>
-          <Route path='/color/purple'>
-            <MushroomListColor />
-          </Route>
-          <Route exact path='/color'>
-            <MushroomColor />
-          </Route>
+
           <Route exact path='/'>
 
             <div>
@@ -106,6 +88,6 @@ function App () {
   )
 }
 
-console.log(mushroom)
+// console.log(mushroom)
 
 export default App

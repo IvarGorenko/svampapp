@@ -1,29 +1,42 @@
-.grid-container {
-    display: grid;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    grid-template-columns: 70px 70px 70px;
-    background-color: #F4E6D9;
-    padding: 10px;
-    line-height: 50px;
-    width: 100px;
-  }
+.headerColor{
+  text-align: center;
+}
 
-  .grid-item {
+.headerForm {
+  text-align: center;
+}
 
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 10px;
-    display: inline-block;
-  }
 
-  .caption {
-    display: block;
-  }
+.item {
+  vertical-align: top;
+  display: inline-block;
+  width: 80px;
+  margin-left: 35px;
+  margin-top: 30px; 
+}
 
+.block {
+  background-color: #A78F72;
+  height: 80px;
+  border-radius: 15px;  
+  border: 1px solid rgba(0, 0, 0, 0.8); 
+}
+
+.caption {
+  color: black;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+}
+
+.bild{
+  height: 90%;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1px;
+}
 
   #white {
       background-color: white;

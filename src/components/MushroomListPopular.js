@@ -2,6 +2,7 @@ import mushroom from '../MushroomDatabase.json'
 import MushroomInfo from './MushroomInfo'
 import { Link } from 'react-router-dom'
 import backButton from '../bilder/backButton.svg'
+import home from '../bilder/home.svg'
 
 function MushroomListPopular () { // när man vill trigga om rendering useState
   const match = mushroom => {
@@ -12,15 +13,18 @@ function MushroomListPopular () { // när man vill trigga om rendering useState
   return (
     // Autofocus funkar inte alltid
     <div>
-      <Link to='/search'>
-        <div className='searchBar1'>
-          <Link to='/'>
-            <img className='backButton' src={backButton} alt='backButton' />
-          </Link>
-          <input autoFocus='autofocus' className='searchBarTop' type='text' placeholder='Sök efter svamp' name='title' />
-        </div>
-      </Link>
-      <div>
+      <div className='searchBar1'>
+        <Link to='/'>
+          <img className='backButton' src={backButton} alt='backButton' />
+        </Link>
+        <Link to='/search'>
+          <input className='searchBarTop' type='text' placeholder='Sök efter svamp' name='title' />
+        </Link>
+        <Link to='/'>
+          <img className='backButton' src={home} alt='backButton' />
+        </Link>
+      </div>
+      <div className='list'>
         {mushroom.filter(match).map((mushroom, i) => (<MushroomInfo key={mushroom.id} data={mushroom} />))}
       </div>
     </div>

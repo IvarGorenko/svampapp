@@ -3,6 +3,7 @@ import mushroom from '../MushroomDatabase.json'
 import MushroomInfo from './MushroomInfo'
 import { Link } from 'react-router-dom'
 import backButton from '../bilder/backButton.svg'
+import home from '../bilder/home.svg'
 
 function MushroomList () { // när man vill trigga om rendering useState
   const [searchString, setSearchString] = useState('')
@@ -21,8 +22,11 @@ function MushroomList () { // när man vill trigga om rendering useState
           <img className='backButton' src={backButton} alt='backButton' />
         </Link>
         <input autoFocus='autofocus' className='searchBarTop' type='text' placeholder='Sök efter svamp' name='title' onChange={event => setSearchString(event.target.value)} />
+        <Link to='/'>
+          <img className='backButton' src={home} alt='backButton' />
+        </Link>
       </div>
-      <div>
+      <div className='list'>
         {mushroom.filter(match).map((mushroom, i) => (<MushroomInfo key={mushroom.id} data={mushroom} />))}
       </div>
     </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import mushroom from '../MushroomDatabase.json'
 import backButton from '../bilder/backButton.svg'
+import home from '../bilder/home.svg'
 
 function getMushroomByName (mushroomName) {
   const found = mushroom.find(element => element.swedishName === mushroomName)
@@ -49,9 +50,12 @@ function MushroomDetails () {
         <Link to='/search'>
           <input className='searchBarTop' type='text' placeholder='Sök efter svamp' name='title' />
         </Link>
+        <Link to='/'>
+          <img className='backButton' src={home} alt='backButton' />
+        </Link>
       </div>
       <div className='mushroomDetails'>
-        <div className='Info'>
+        <div className='Info list'>
           <div className='leftSida3'>
             <div className='mushroomPicture'>
               <img className='picture' src={image} alt='logo' />
@@ -67,7 +71,7 @@ function MushroomDetails () {
         </div>
         <div className='mushroomDescription'>
           <h4 className='shortDescription'>Kort beskrivning</h4>
-          <p className='shortDescription'>Familj: {mushroomdata.nonScGroupValue}</p>
+          <p className='shortDescription'>Sort: {mushroomdata.nonScGroupValue}</p>
           <p className='shortDescription'>Färg: {colorArray}</p>
           <p className='shortDescription'>Växtplats: {mushroomdata.vegetation}</p>
         </div>
@@ -81,4 +85,3 @@ function MushroomDetails () {
 }
 
 export default MushroomDetails
-// <Link to='/search'>back</Link>
