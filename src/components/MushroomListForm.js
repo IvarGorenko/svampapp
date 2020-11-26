@@ -12,6 +12,10 @@ function MushroomListForm () { // när man vill trigga om rendering useState
     return mushroomForm === form
   }
 
+  let url = window.location.href
+  url = url.split('/')
+  const string = url[url.length - 1]
+
   return (
     // Autofocus funkar inte alltid
     <div>
@@ -27,7 +31,7 @@ function MushroomListForm () { // när man vill trigga om rendering useState
         </Link>
       </div>
       <div className='list'>
-        {mushroom.filter(match).map((mushroom, i) => (<MushroomInfo key={mushroom.id} data={mushroom} />))}
+        {mushroom.filter(match).map((mushroom, i) => (<MushroomInfo key={mushroom.id} data={mushroom} from={string} />))}
       </div>
     </div>
 

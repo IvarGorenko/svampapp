@@ -11,58 +11,58 @@ function MushroomColor () {
       </Link>
       <h2 className='headerColor'>Vilken färg har svampen?</h2>
 
-      <Link to='/color/white'>
+      <Link to='/white'>
         <div className='item'>
           <div className='block' id='white' />
-          <span className='caption'>White</span>
+          <span className='caption'>Vit</span>
         </div>
       </Link>
-      <Link to='/color/gray'>
+      <Link to='/gray'>
         <div className='item'>
           <div className='block' id='gray' />
-          <span className='caption'>Gray</span>
+          <span className='caption'>Grå</span>
         </div>
       </Link>
-      <Link to='/color/yellow'>
+      <Link to='/yellow'>
         <div className='item'>
           <div className='block' id='yellow' />
-          <span className='caption'>Yellow</span>
+          <span className='caption'>Gul</span>
         </div>
       </Link>
-      <Link to='/color/brown'>
+      <Link to='/brown'>
         <div className='item'>
           <div className='block' id='brown' />
-          <span className='caption'>Brown</span>
+          <span className='caption'>Brun</span>
         </div>
       </Link>
-      <Link to='/color/orange'>
+      <Link to='/orange'>
         <div className='item'>
           <div className='block' id='orange' />
           <span className='caption'>Orange</span>
         </div>
       </Link>
-      <Link to='/color/green'>
+      <Link to='/green'>
         <div className='item'>
           <div className='block' id='green' />
-          <span className='caption'>Green</span>
+          <span className='caption'>Grön</span>
         </div>
       </Link>
-      <Link to='/color/red'>
+      <Link to='/red'>
         <div className='item'>
           <div className='block' id='red' />
-          <span className='caption'>Red</span>
+          <span className='caption'>Röd</span>
         </div>
       </Link>
-      <Link to='/color/black'>
+      <Link to='/black'>
         <div className='item'>
           <div className='block' id='black' />
-          <span className='caption'>Black</span>
+          <span className='caption'>Svart</span>
         </div>
       </Link>
-      <Link to='/color/purple'>
+      <Link to='/purple'>
         <div className='item'>
           <div className='block' id='purple' />
-          <span className='caption'>Purple</span>
+          <span className='caption'>Lila</span>
         </div>
       </Link>
 

@@ -29,7 +29,7 @@ function App () {
     <Router>
       <div>
         <Switch>
-          <Route path='/search/:swedishName'>
+          <Route path='/mushroom/:swedishName/:route'>
             <MushroomDetails />
           </Route>
           <Route exact path='/search'>
@@ -40,18 +40,18 @@ function App () {
             <MushroomListPopular />
           </Route>
 
-          <Route exact path='/color'>
-            <MushroomColor />
-          </Route>
-          <Route exact path='/color/:color'>
-            <MushroomListColor />
-          </Route>
-
           <Route exact path='/form'>
             <MushroomForm />
           </Route>
-          <Route exact path='/form/:form'>
+          <Route exact path='(/:form)'>
             <MushroomListForm />
+          </Route>
+
+          <Route exact path='/color'>
+            <MushroomColor />
+          </Route>
+          <Route exact path='/:color'>
+            <MushroomListColor />
           </Route>
 
           <Route exact path='/'>
@@ -87,7 +87,5 @@ function App () {
     </Router>
   )
 }
-
-// console.log(mushroom)
 
 export default App

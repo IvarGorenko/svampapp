@@ -7,8 +7,8 @@ function importAll (r) {
   return images
 }
 
-const MushroomInfo = ({ data }) => {
-  const linken = '/search/' + data.swedishName
+const MushroomInfo = ({ data, from }) => {
+  const linken = '/mushroom/' + data.swedishName + '/' + from
 
   const images = importAll(require.context('../bilder/svampbilder/', false, /\.(jpg)$/))
   const filenameArray = data.pictures[0].fileName.split('.')

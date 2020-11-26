@@ -20,7 +20,9 @@ function importAll (r) {
 }
 
 function MushroomDetails () {
-  const mushroomdata = getMushroomByName(useParams().swedishName)
+  const { swedishName, route } = useParams()
+  console.log(route)
+  const mushroomdata = getMushroomByName(swedishName)
 
   let colorArray = mushroomdata.color.map(x => x)
 
@@ -44,10 +46,10 @@ function MushroomDetails () {
   return (/* behöver fixa så att det länkar tillbaka till color eller sort beroende på vart vi är innan */
     <div>
       <div className='searchBar1'>
-        <Link to='/search'>
+        <Link to={'/' + route}>
           <img className='backButton' src={backButton} alt='backButton' />
         </Link>
-        <Link to='/search'>
+        <Link to={'/' + route}>
           <input className='searchBarTop' type='text' placeholder='Sök efter svamp' name='title' />
         </Link>
         <Link to='/'>

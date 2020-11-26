@@ -10,8 +10,14 @@ function MushroomListPopular () { // när man vill trigga om rendering useState
 
     return edibleMushroom === 100 // bästa värdet på edibility i databas är 100
   }
+
+  let url = window.location.href
+  url = url.split('/')
+  const string = url[url.length - 1]
+
   return (
-    // Autofocus funkar inte alltid
+  // Autofocus funkar inte alltid
+
     <div>
       <div className='searchBar1'>
         <Link to='/'>
@@ -25,7 +31,7 @@ function MushroomListPopular () { // när man vill trigga om rendering useState
         </Link>
       </div>
       <div className='list'>
-        {mushroom.filter(match).map((mushroom, i) => (<MushroomInfo key={mushroom.id} data={mushroom} />))}
+        {mushroom.filter(match).map((mushroom, i) => (<MushroomInfo key={mushroom.id} data={mushroom} from={string} />))}
       </div>
     </div>
 
