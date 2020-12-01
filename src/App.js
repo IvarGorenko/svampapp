@@ -1,4 +1,3 @@
-
 import './App.css'
 
 import logo from './bilder/svamp.svg'
@@ -66,7 +65,7 @@ function App () {
             </div>
             <div className='superButtongroup'>
               <Link to='/search'>
-                <button className='searchBar'><p className='alignleft'>Sök efter svampar...</p><img className='alignright icon' src={searchIcon} alt='search' /></button>
+                <button className='searchBar'><p className='alignleft'>Sök efter svampar</p><img className='alignright icon' src={searchIcon} alt='search' /></button>
               </Link>
               <div className='buttongroup'>
                 <Link to='/popular'>

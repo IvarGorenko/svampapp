@@ -3,11 +3,10 @@ import { Link, useParams } from 'react-router-dom'
 import mushroom from '../MushroomDatabase.json'
 import backButton from '../bilder/backButton.svg'
 import home from '../bilder/home.svg'
+import displayEdibility from './DisplayEdibility'
 
 function getMushroomByName (mushroomName) {
   const found = mushroom.find(element => element.swedishName === mushroomName)
-
-  // console.log(found)
   return (
     found
   )
@@ -21,7 +20,7 @@ function importAll (r) {
 
 function MushroomDetails () {
   const { swedishName, route } = useParams()
-  console.log(route)
+  // console.log(route)
   const mushroomdata = getMushroomByName(swedishName)
 
   let colorArray = mushroomdata.color.map(x => x)
@@ -53,7 +52,7 @@ function MushroomDetails () {
           <input className='searchBarTop' type='text' placeholder='Sök efter svamp' name='title' />
         </Link>
         <Link to='/'>
-          <img className='backButton' src={home} alt='backButton' />
+          <img className='homeButton' src={home} alt='backButton' />
         </Link>
       </div>
       <div className='mushroomDetails'>
@@ -67,7 +66,7 @@ function MushroomDetails () {
             <div className='mushroomName'>
               <h4>{mushroomdata.swedishName} </h4>
               <h4>Latin: {mushroomdata.scientificName} </h4>
-              <h4>{mushroomdata.edibilityValue} </h4>
+              <h4>{displayEdibility(mushroomdata)}</h4>
             </div>
           </div>
         </div>
@@ -85,5 +84,5 @@ function MushroomDetails () {
     </div>
   )
 }
-
+// {mushroomdata.edibilityValue}
 export default MushroomDetails

@@ -11,13 +11,14 @@ const searcher = new FuzzySearch(mushroom, ['swedishName', 'color'], {
 })
 
 function MushroomList () { // när man vill trigga om rendering useState
+  mushroom.sort((a, b) => a.edibility - b.edibility)
   const [searchString, setSearchString] = useState('')
   const matched = searcher.search(searchString)
 
   let url = window.location.href
   url = url.split('/')
   const string = url[url.length - 1]
-  console.log(string)
+  // console.log(string)
 
   return (
     <div>
@@ -27,7 +28,7 @@ function MushroomList () { // när man vill trigga om rendering useState
         </Link>
         <input autoFocus='autofocus' className='searchBarTop' type='text' placeholder='Sök efter svamp' name='title' onChange={event => setSearchString(event.target.value)} />
         <Link to='/'>
-          <img className='backButton' src={home} alt='backButton' />
+          <img className='homeButton' src={home} alt='backButton' />
         </Link>
       </div>
       <div className='list'>

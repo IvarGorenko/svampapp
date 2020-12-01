@@ -67,6 +67,10 @@ b {
   width: 100%;
 }
 
+.button:hover {
+  background-color: #553d20;
+}
+
 .buttongroup{
   padding-top: 20px;
   width: 75%;
@@ -91,7 +95,7 @@ b {
 .searchBar1{
   width: 100%;
   border-bottom: 1px solid #A78F72;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   padding-top: 10px;
   overflow: hidden;
   position: fixed;
@@ -100,7 +104,7 @@ b {
   }
 
 .list {
-  margin-top: 53px;
+  margin-top: 63px;
 }
 
 .nav {
@@ -112,17 +116,34 @@ b {
 }
 
 .searchBarTop {
-  width: 80%;
+  background-image: url(bilder/search.svg);
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  background-size: 25px;
+
+  position: absolute;
+  width: 70%;
   border-radius: 50px;
   font-size: 1.5em;
   text-decoration: none;
   vertical-align: middle;
+  left: 15%;
+  margin-top: 3px;
 }
 
 .backButton{
   /*width: 10%;*/
-  height: 30px;
+  height: 40px;
   vertical-align: middle;
+  float: left;
+  margin-left: 5px;
+}
+
+.homeButton{
+  height: 40px;
+  vertical-align: middle;
+  float: right;
+  margin-right: 5px;
 }
 
 .searchBarButton {
@@ -166,6 +187,9 @@ b {
   width: 30px;
 }
 
+.iconEdible {
+}
+
 .mushroomDetails {
   text-align: left;
   display: flex;
@@ -184,14 +208,13 @@ b {
   width: 100%;
 }
 
-
-
 .mushroomDescription{
   border: 1px solid #A78F72;
   border-radius: 15px;
   width: 100%;
-  margin-top: 20px;
   padding: 10px;
+  margin-bottom: 20px;
+  
 }
 
 .leftSida3{

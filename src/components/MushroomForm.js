@@ -20,112 +20,121 @@ function MushroomForm () {
       </Link>
       <h2 className='headerForm'>Vilken sort är svampen?</h2>
 
-      <Link to='/Kantareller och trumpetsvampar'>
-        <div className='item'>
-          <div className='block'>
-            <img className='bild' src={images['Kantareller.svg'].default} alt='' />
+      <div className='overblock'>
+        <Link to='/Kantareller och trumpetsvampar'>
+          <div className='item'>
+            <div className='block'>
+              <img className='bild' src={images['Kantareller.svg'].default} alt='' />
+            </div>
+            <span className='caption'>Kantareller</span>
           </div>
-          <span className='caption'>Kantareller</span>
-        </div>
-      </Link>
+        </Link>
 
-      <Link to='/Champinjoner'>
-        <div className='item'>
-          <div className='block'>
-            <img className='bild' src={images['Champinjon.svg'].default} alt='' />
+        <Link to='/Champinjoner'>
+          <div className='item'>
+            <div className='block'>
+              <img className='bild' src={images['Champinjon.svg'].default} alt='' />
+            </div>
+            <span className='caption'>Champinjoner</span>
           </div>
-          <span className='caption'>Champinjoner</span>
-        </div>
-      </Link>
-      <Link to='/Soppar'>
-        <div className='item'>
-          <div className='block'>
-            <img className='bild' src={images['Soppar.svg'].default} alt='' />
+        </Link>
+        <Link to='/Skivlingar'>
+          <div className='item'>
+            <div className='block'>
+              <img className='bild' src='' alt='' />
+            </div>
+            <span className='caption'>Skivlingar</span>
           </div>
-          <span className='caption'>Soppar</span>
-        </div>
-      </Link>
-      <Link to='/Murklor'>
-        <div className='item'>
-          <div className='block'>
-            <img className='bild' src={images['Murklor.svg'].default} alt='' />
+        </Link>
+        <Link to='/Soppar'>
+          <div className='item'>
+            <div className='block'>
+              <img className='bild' src={images['Soppar.svg'].default} alt='' />
+            </div>
+            <span className='caption'>Soppar</span>
           </div>
-          <span className='caption'>Murklor</span>
-        </div>
-      </Link>
-      <Link to='/Riskor'>
-        <div className='item'>
-          <div className='block'>
-            <img className='bild' src={images['Riskor.svg'].default} alt='' />
+        </Link>
+        <Link to='/Murklor'>
+          <div className='item'>
+            <div className='block'>
+              <img className='bild' src={images['Murklor.svg'].default} alt='' />
+            </div>
+            <span className='caption'>Murklor</span>
           </div>
-          <span className='caption'>Riskor</span>
-        </div>
-      </Link>
-      <Link to='/Tickor'>
-        <div className='item'>
-          <div className='block'>
-            <img className='bild' src={images['Tickor.svg'].default} alt='' />
+        </Link>
+        <Link to='/Riskor'>
+          <div className='item'>
+            <div className='block'>
+              <img className='bild' src={images['Riskor.svg'].default} alt='' />
+            </div>
+            <span className='caption'>Riskor</span>
           </div>
-          <span className='caption'>Tickor</span>
-        </div>
-      </Link>
-      <Link to='/Bläcksvampar'>
-        <div className='item'>
-          <div className='block'>
-            <img className='bild' src={images['Blacksvamp.svg'].default} alt='' />
+        </Link>
+        <Link to='/Tickor'>
+          <div className='item'>
+            <div className='block'>
+              <img className='bild' src={images['Tickor.svg'].default} alt='' />
+            </div>
+            <span className='caption'>Tickor</span>
           </div>
-          <span className='caption'>Bläcksvampar</span>
-        </div>
-      </Link>
-      <Link to='/Kremlor'>
-        <div className='item'>
-          <div className='block'>
-            <img className='bild' src={images['Kremlor.svg'].default} alt='' />
+        </Link>
+        <Link to='/Bläcksvampar'>
+          <div className='item'>
+            <div className='block'>
+              <img className='bild' src={images['Blacksvamp.svg'].default} alt='' />
+            </div>
+            <span className='caption'>Bläcksvampar</span>
           </div>
-          <span className='caption'>Kremlor</span>
-        </div>
-      </Link>
-      <Link to='/Flugsvampar'>
-        <div className='item'>
-          <div className='block'>
-            <img className='bild' src={images['Flugsvamp.svg'].default} alt='' />
+        </Link>
+        <Link to='/Kremlor'>
+          <div className='item'>
+            <div className='block'>
+              <img className='bild' src={images['Kremlor.svg'].default} alt='' />
+            </div>
+            <span className='caption'>Kremlor</span>
           </div>
-          <span className='caption'>Flugsvampar</span>
-        </div>
-      </Link>
-      <Link to='/Musseroner'>
-        <div className='item'>
-          <div className='block'>
-            <img className='bild' src={images['Musseroner.svg'].default} alt='' />
+        </Link>
+        <Link to='/Flugsvampar'>
+          <div className='item'>
+            <div className='block'>
+              <img className='bild' src={images['Flugsvamp.svg'].default} alt='' />
+            </div>
+            <span className='caption'>Flugsvampar</span>
           </div>
-          <span className='caption'>Musseroner</span>
-        </div>
-      </Link>
-      <Link to='/Taggsvampar'>
-        <div className='item'>
-          <div className='block'>
-            <img className='bild' src={images['Taggsvampar.svg'].default} alt='' />
+        </Link>
+        <Link to='/Musseroner'>
+          <div className='item'>
+            <div className='block'>
+              <img className='bild' src={images['Musseroner.svg'].default} alt='' />
+            </div>
+            <span className='caption'>Musseroner</span>
           </div>
-          <span className='caption'>Taggsvampar</span>
-        </div>
-      </Link>
-      <Link to='/Musslingar'>
-        <div className='item'>
-          <div className='block'>
-            <img className='bild' src={images['Musslingar.svg'].default} alt='' />
+        </Link>
+        <Link to='/Taggsvampar'>
+          <div className='item'>
+            <div className='block'>
+              <img className='bild' src={images['Taggsvampar.svg'].default} alt='' />
+            </div>
+            <span className='caption'>Taggsvampar</span>
           </div>
-          <span className='caption'>Musslingar</span>
-        </div>
-      </Link>
-      <Link to='/Övriga svampar'>
-        <div className='item'>
-          <div className='block'>
-            <img className='bild' src={images['Ovriga.svg'].default} alt='' />
+        </Link>
+        <Link to='/Musslingar'>
+          <div className='item'>
+            <div className='block'>
+              <img className='bild' src={images['Musslingar.svg'].default} alt='' />
+            </div>
+            <span className='caption'>Musslingar</span>
           </div>
-          <span className='caption'>Övriga svampar</span>
-        </div>
-      </Link>
-
+        </Link>
+        <Link to='/Övriga svampar'>
+          <div className='item'>
+            <div className='block'>
+              <img className='bild' src={images['Ovriga.svg'].default} alt='' />
+            </div>
+            <span className='caption'>Övriga svampar</span>
+          </div>
+        </Link>
+      </div>
     </div>
 
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import displayEdibility from './DisplayEdibility'
 
 function importAll (r) {
   const images = {}
@@ -24,7 +25,7 @@ const MushroomInfo = ({ data, from }) => {
         </div>
         <div className='right'>
           <h2>{data.swedishName}</h2>
-          <p>{data.edibilityValue}</p>
+          <h4>{displayEdibility(data)}</h4>
         </div>
       </div>
     </Link>
