@@ -1,6 +1,7 @@
 {
   "name": "svampapp",
   "version": "0.1.0",
+  "homepage": "svampapp/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
@@ -14,7 +15,6 @@
     "redis-parser": "^3.0.0",
     "web-vitals": "^0.2.4"
   },
-  "homepage": "svampapp/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
