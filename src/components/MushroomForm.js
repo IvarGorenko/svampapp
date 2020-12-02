@@ -15,13 +15,15 @@ function MushroomForm () {
   // Champinjoner, Tickor, Soppar, Murklor, Riskor, Kantareller och trumpetsvampar, Bläcksvampar, Kremlor, Flugsvampar, Musseroner, Taggsvampar, Musslingar, Övriga svampar
   // Musseroner saknas
     <div className='nav'>
-      <Link to='/'>
-        <img className='backButton' src={backButton} alt='backButton' />
-      </Link>
+      <div className='searchBarColor'>
+        <Link to='/'>
+          <img className='backButton' src={backButton} alt='backButton' />
+        </Link>
+      </div>
       <h2 className='headerForm'>Vilken sort är svampen?</h2>
 
       <div className='overblock'>
-        <Link to='/Kantareller och trumpetsvampar'>
+        <Link to='/form/Kantareller och trumpetsvampar'>
           <div className='item'>
             <div className='block'>
               <img className='bild' src={images['Kantareller.svg'].default} alt='' />
@@ -30,7 +32,7 @@ function MushroomForm () {
           </div>
         </Link>
 
-        <Link to='/Champinjoner'>
+        <Link to='/form/Champinjoner'>
           <div className='item'>
             <div className='block'>
               <img className='bild' src={images['Champinjon.svg'].default} alt='' />
@@ -38,15 +40,15 @@ function MushroomForm () {
             <span className='caption'>Champinjoner</span>
           </div>
         </Link>
-        <Link to='/Skivlingar'>
+        <Link to='/form/Skivlingar'>
           <div className='item'>
             <div className='block'>
-              <img className='bild' src='' alt='' />
+              <img className='bild' src={images['Skivlingar.svg'].default} alt='' />
             </div>
             <span className='caption'>Skivlingar</span>
           </div>
         </Link>
-        <Link to='/Soppar'>
+        <Link to='/form/Soppar'>
           <div className='item'>
             <div className='block'>
               <img className='bild' src={images['Soppar.svg'].default} alt='' />
@@ -54,7 +56,7 @@ function MushroomForm () {
             <span className='caption'>Soppar</span>
           </div>
         </Link>
-        <Link to='/Murklor'>
+        <Link to='/form/Murklor'>
           <div className='item'>
             <div className='block'>
               <img className='bild' src={images['Murklor.svg'].default} alt='' />
@@ -62,7 +64,7 @@ function MushroomForm () {
             <span className='caption'>Murklor</span>
           </div>
         </Link>
-        <Link to='/Riskor'>
+        <Link to='/form/Riskor'>
           <div className='item'>
             <div className='block'>
               <img className='bild' src={images['Riskor.svg'].default} alt='' />
@@ -70,7 +72,7 @@ function MushroomForm () {
             <span className='caption'>Riskor</span>
           </div>
         </Link>
-        <Link to='/Tickor'>
+        <Link to='/form/Tickor'>
           <div className='item'>
             <div className='block'>
               <img className='bild' src={images['Tickor.svg'].default} alt='' />
@@ -78,7 +80,7 @@ function MushroomForm () {
             <span className='caption'>Tickor</span>
           </div>
         </Link>
-        <Link to='/Bläcksvampar'>
+        <Link to='/form/Bläcksvampar'>
           <div className='item'>
             <div className='block'>
               <img className='bild' src={images['Blacksvamp.svg'].default} alt='' />
@@ -86,7 +88,7 @@ function MushroomForm () {
             <span className='caption'>Bläcksvampar</span>
           </div>
         </Link>
-        <Link to='/Kremlor'>
+        <Link to='/form/Kremlor'>
           <div className='item'>
             <div className='block'>
               <img className='bild' src={images['Kremlor.svg'].default} alt='' />
@@ -94,7 +96,7 @@ function MushroomForm () {
             <span className='caption'>Kremlor</span>
           </div>
         </Link>
-        <Link to='/Flugsvampar'>
+        <Link to='/form/Flugsvampar'>
           <div className='item'>
             <div className='block'>
               <img className='bild' src={images['Flugsvamp.svg'].default} alt='' />
@@ -102,7 +104,7 @@ function MushroomForm () {
             <span className='caption'>Flugsvampar</span>
           </div>
         </Link>
-        <Link to='/Musseroner'>
+        <Link to='/form/Musseroner'>
           <div className='item'>
             <div className='block'>
               <img className='bild' src={images['Musseroner.svg'].default} alt='' />
@@ -110,7 +112,7 @@ function MushroomForm () {
             <span className='caption'>Musseroner</span>
           </div>
         </Link>
-        <Link to='/Taggsvampar'>
+        <Link to='/form/Taggsvampar'>
           <div className='item'>
             <div className='block'>
               <img className='bild' src={images['Taggsvampar.svg'].default} alt='' />
@@ -118,7 +120,7 @@ function MushroomForm () {
             <span className='caption'>Taggsvampar</span>
           </div>
         </Link>
-        <Link to='/Musslingar'>
+        <Link to='/form/Musslingar'>
           <div className='item'>
             <div className='block'>
               <img className='bild' src={images['Musslingar.svg'].default} alt='' />
@@ -126,7 +128,7 @@ function MushroomForm () {
             <span className='caption'>Musslingar</span>
           </div>
         </Link>
-        <Link to='/Övriga svampar'>
+        <Link to='/form/Övriga svampar'>
           <div className='item'>
             <div className='block'>
               <img className='bild' src={images['Ovriga.svg'].default} alt='' />

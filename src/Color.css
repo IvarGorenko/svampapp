@@ -54,6 +54,16 @@
   justify-content: center;
 }
 
+.searchBarColor{
+  width: 100%;
+  margin-left: -1px;
+  margin-top: -3px;
+  padding-bottom: 12px;
+  overflow: hidden;
+  top: 0;
+  background-color: #F4E6D9;
+  }
+
 #white {
     background-color: white;
 }

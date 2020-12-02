@@ -23,7 +23,8 @@ function MushroomListForm () { // när man vill trigga om rendering useState
 
   let url = window.location.href
   url = url.split('/')
-  const string = url[url.length - 1]
+  const from = url[url.length - 2] + '/' + url[url.length - 1]
+  // console.log(from)
 
   return (
     <div>
@@ -37,7 +38,7 @@ function MushroomListForm () { // när man vill trigga om rendering useState
         </Link>
       </div>
       <div className='list'>
-        {matched.filter(match).map((mushroom, i) => (<MushroomInfo key={mushroom.id} data={mushroom} from={string} />))}
+        {matched.filter(match).map((mushroom, i) => (<MushroomInfo key={mushroom.id} data={mushroom} from={from} />))}
       </div>
     </div>
 

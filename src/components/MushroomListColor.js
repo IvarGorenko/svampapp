@@ -17,6 +17,7 @@ function MushroomListColor () {
   const matched = searcher.search(searchString)
 
   const color = useParams().color
+  // console.log(color)
 
   const match = shroom => {
     let mushroomColor = shroom.color.toString()
@@ -31,8 +32,8 @@ function MushroomListColor () {
 
   let url = window.location.href
   url = url.split('/')
-  const string = url[url.length - 1]
-  // console.log(string)
+  const from = url[url.length - 2] + '/' + url[url.length - 1]
+  // console.log(from)
 
   return (
     <div>
@@ -47,7 +48,7 @@ function MushroomListColor () {
       </div>
       <div className='list'>
 
-        {matched.filter(match).map((mushroom, i) => (<MushroomInfo key={mushroom.id} data={mushroom} from={string} />))}
+        {matched.filter(match).map((mushroom, i) => (<MushroomInfo key={mushroom.id} data={mushroom} from={from} />))}
       </div>
     </div>
 

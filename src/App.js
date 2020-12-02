@@ -42,14 +42,14 @@ function App () {
           <Route exact path='/form'>
             <MushroomForm />
           </Route>
-          <Route exact path='(/:form)'>
+          <Route exact path='/form/:form'>
             <MushroomListForm />
           </Route>
 
           <Route exact path='/color'>
             <MushroomColor />
           </Route>
-          <Route exact path='/:color'>
+          <Route exact path='/color/:color'>
             <MushroomListColor />
           </Route>
 
@@ -69,13 +69,13 @@ function App () {
               </Link>
               <div className='buttongroup'>
                 <Link to='/popular'>
-                  <button className='button'><p className='alignleft'>Mest vanliga svampar</p><img className='alignright icon' src={star} alt='star' /></button>
+                  <button className='button'><p className='alignleft'>Mest populära svampar</p><img className='alignright icon' src={star} alt='star' /></button>
                 </Link>
                 <Link to='/color'>
                   <button className='button'><p className='alignleft'>Sök efter färg</p><img className='alignright icon' src={palette} alt='color' /></button>
                 </Link>
                 <Link to='/form'>
-                  <button className='button'><p className='alignleft'>Sök efter form</p><img className='alignright icon' src={mushroomIcon} alt='icon' /></button>
+                  <button className='button'><p className='alignleft'>Sök efter sort</p><img className='alignright icon' src={mushroomIcon} alt='icon' /></button>
                 </Link>
               </div>
             </div>
