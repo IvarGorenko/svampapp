@@ -1,10 +1,10 @@
+import React, { useState } from 'react'
 import mushroom from '../MushroomDatabase.json'
 import MushroomInfo from './MushroomInfo'
 import { Link, useParams } from 'react-router-dom'
 import backButton from '../bilder/backButton.svg'
 import home from '../bilder/home.svg'
 import FuzzySearch from 'fuzzy-search'
-import React, { useState } from 'react'
 
 const searcher = new FuzzySearch(mushroom, ['swedishName'], {
   caseSensitive: false

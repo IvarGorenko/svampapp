@@ -1,3 +1,4 @@
+import React from 'react'
 import '../App.css'
 import notedible from '../bilder/ejatbar.svg'
 import poison from '../bilder/poison.svg'

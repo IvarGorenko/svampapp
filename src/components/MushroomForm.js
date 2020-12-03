@@ -1,3 +1,4 @@
+import React from 'react'
 import backButton from '../bilder/backButton.svg'
 import '../Color.css'
 import { Link } from 'react-router-dom'
