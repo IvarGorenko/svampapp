@@ -13,8 +13,6 @@ function MushroomForm () {
   const images = importAll(require.context('../bilder/svamplogos/', false, /\.(svg)$/))
 
   return (
-  // Champinjoner, Tickor, Soppar, Murklor, Riskor, Kantareller och trumpetsvampar, Bläcksvampar, Kremlor, Flugsvampar, Musseroner, Taggsvampar, Musslingar, Övriga svampar
-  // Musseroner saknas
     <div className='nav'>
       <div className='searchBarColor'>
         <Link to='/'>

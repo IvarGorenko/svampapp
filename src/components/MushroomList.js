@@ -32,7 +32,7 @@ function MushroomList () { // när man vill trigga om rendering useState
         </Link>
       </div>
       <div className='list'>
-        {matched.map((mushroom, i) => (<MushroomInfo key={mushroom.id} data={mushroom} from={string} />))}
+        {matched.map((mushroom) => (<MushroomInfo key={mushroom.id} data={mushroom} from={string} />))}
       </div>
     </div>
 

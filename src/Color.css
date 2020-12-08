@@ -21,6 +21,7 @@
   height: 90px;
   border-radius: 15px;  
   border: 1px solid rgba(0, 0, 0, 0.8); 
+  box-shadow: 5px 5px 8px #888888;
 }
 
 .caption {
@@ -66,10 +67,12 @@
 
 #white {
     background-color: white;
+    
 }
 
 #gray {
     background-color: gray;
+    
 }
 
 #yellow {

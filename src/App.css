@@ -69,6 +69,7 @@ b {
   margin-top: 10px;
   border-radius: 20px;
   width: 100%;
+  box-shadow: 5px 5px 8px #888888;
 }
 
 .button:hover {
@@ -86,7 +87,11 @@ b {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   border-radius: 30px;
-  width: 100%;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 .superButtongroup {
@@ -234,6 +239,7 @@ b {
 
 .picture{
   width: 100%;
+  box-shadow: 5px 5px 8px #888888;
 }
 
 .mushroomDescription{
